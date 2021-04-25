@@ -1,0 +1,42 @@
+---
+title: "Vignette"
+author: "Dalton Shepherd"
+date: "04/25/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Vignette
+
+```{r Lifeexpectancy}
+summary(Lifeexpectancy)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(lifeexpectancy)
+
+```
+```(R LifeData).
+data.names.vec <- c(
+  "Male",
+  "Female",
+  "Both",
+  "Country")
+```
+
+```str(Lifeexpectancy)
+'data.frame':	228 obs. of  4 variables:
+ $ Both     : num
+ $ Male     : int
+ $ Female     : int
+```
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
